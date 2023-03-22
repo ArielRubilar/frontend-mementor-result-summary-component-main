@@ -1,117 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
 
 
-  <main>
+    <main>
 
-    <div class="card-summary">
-      <div class="result-container">
-        <h3 class="title-3">
-          Your Result
-        </h3>
-        
-        <div class="result-score border-circle">
-          <span class="result-score__number color-white">
-            76
-          </span> 
-          <span class="result-score__total">
-            of 100
-          </span> 
+      <div class="card-summary">
+        <div class="result-container grid-flow ">
+          <h2 class="title-3">
+            Your Result
+          </h2>
+
+          <div class="result-score border-circle">
+            <span class="result-score__number color-white">
+              76
+            </span>
+            <span class="result-score__total">
+              of 100
+            </span>
+          </div>
+
+          <div>
+            <p class="display mb-2 color-white">Great</p>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+
         </div>
-        
-        
-        <div>
-          <p class="display mb-2 color-white">Great</p>
-          <p>  You scored higher than 65% of the people who have taken these tests.</p>
+
+
+        <div class="summary-container grid-flow ">
+
+          <h3 class="title-3">Summary</h3>
+
+          <div class="summary-scores grid-flow" data-grid="small">
+            <div class="alert" data-alert='danger'>
+              <p class="alert__text ">
+                <img class="icon" src="./assets/images/icon-reaction.svg" alt="icon thunder">
+                Reaction
+              </p>
+              <p class="alert__score">
+                80<span> / 100</span>
+              </p>
+            </div>
+
+
+            <div class="alert" data-alert='warning'>
+              <p class="alert__text">
+                <img class="icon" src="./assets/images/icon-memory.svg" alt="icon brain">
+                Memory
+              </p>
+              <p class="alert__score">
+                92<span> / 100</span>
+              </p>
+            </div>
+
+
+            <div class="alert" data-alert='success'>
+              <p class="alert__text">
+                <img class="icon" src="./assets/images/icon-verbal.svg" alt="icon chat">
+                Verbal
+              </p>
+
+              <p class="alert__score">
+                61<span> / 100</span>
+              </p>
+            </div>
+
+            <div class="alert" data-alert='info'>
+              <p class="alert__text">
+                <img class="icon" src="./assets/images/icon-visual.svg" alt="icon eye">
+                Visual
+              </p>
+
+              <p class="alert__score">
+                72<span> / 100</span>
+              </p>
+            </div>
+
+          </div>
+          <button class="btn-primary">
+            <span>
+              Continue
+            </span>
+          </button>
+
         </div>
-        
-        
+
       </div>
-      
-      
-      <div class="summary-container">
 
-        <h3 class="title-3">Summary</h3>
-        
-        <div class="summary-scores">
-          
-          
-          <div class="alert alert-danger ">
-            <p class="alert__text ">
-              <img  class="icon" src="./assets/images/icon-reaction.svg" alt="icon thunder">
-              Reaction
-            </p>
-            <p class="alert__score">
-              80<span> / 100</span>
-            </p>
-          </div>
-          
-          
-          <div class="alert alert-warning">
-            <p class="alert__text  " >
-              <img class="icon" src="./assets/images/icon-memory.svg" alt="icon brain">
-              Memory
-            </p>
-            <p class="alert__score">
-              92<span> / 100</span>
-            </p> 
-          </div>
-          
-          
-          <div class="alert alert-success">
-            <p class="alert__text">
-              <img  class="icon" src="./assets/images/icon-verbal.svg" alt="icon chat">
-              Verbal
-            </p>
-            
-            <p class="alert__score">
-              61<span> / 100</span>
-            </p>
-          </div>
-          
-          <div class="alert alert-info">
-            <p class="alert__text">
-              <img class="icon" src="./assets/images/icon-visual.svg" alt="icon eye">
-              Visual
-            </p> 
-            
-            <p class="alert__score">
-              72<span> / 100</span>
-            </p> 
-          </div>
-          
-        </div>
-        <button class="btn-primary">
-          <span>
-            Continue
-          </span> 
-        </button>
-        
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Ariel Rubilar</a>.
       </div>
-      
-    </div>
-    
-    
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Ariel Rubilar</a>.
-    </div>
-  </main>
+    </main>
   </body>
-  </html>
+
+</html>
